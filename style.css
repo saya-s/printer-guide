@@ -1,0 +1,502 @@
+
+/* =========================================
+   01. CORPORATE COLOR PALETTE
+   ========================================= */
+
+:root {
+    --primary: #3E5A63;
+    --accent: #6CB1BD;
+    --white: #FFFFFF;
+    --radius: 18px;
+}
+
+
+/* =========================================
+   02. GLOBAL STYLING
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                 'Segoe UI', sans-serif;
+    background: var(--white);
+    color: var(--primary);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: clamp(30px, 6vw, 48px);
+    letter-spacing: -1.5px;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: clamp(23px, 4vw, 30px);
+    margin: 0 0 8px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+a:focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 4px;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+
+/* =========================================
+   03. HEADER & COMPANY LOGO
+   ========================================= */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background: var(--white);
+    border-bottom: 3px solid var(--accent);
+    padding: 12px max(24px, calc((100% - 900px) / 2));
+}
+
+.brand {
+    display: block;
+    min-width: 0;
+}
+
+.company-logo {
+    display: block;
+    width: 260px;
+    max-width: 100%;
+    height: auto;
+}
+
+.home-link {
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.home-link:hover {
+    background: var(--primary);
+    color: var(--white);
+}
+
+
+/* =========================================
+   04. MAIN CONTAINER & INTRODUCTION
+   ========================================= */
+
+.container {
+    width: min(900px, 100%);
+    margin: 0 auto;
+    padding: 40px 24px 56px;
+    flex: 1;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.eyebrow {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.screen-heading {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.subtitle {
+    margin: 0;
+}
+
+
+/* =========================================
+   05. NAVIGATION & BREADCRUMBS
+   ========================================= */
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 26px;
+    font-size: 13px;
+}
+
+.navigation a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   06. FIRST-TIME SETUP
+   ========================================= */
+
+.first-time-setup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: var(--white);
+    border: 1px solid var(--accent);
+    border-radius: var(--radius);
+    padding: 24px;
+    margin-bottom: 32px;
+}
+
+.setup-copy {
+    flex: 1;
+}
+
+.first-time-setup h2 {
+    font-size: 20px;
+}
+
+.first-time-setup p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.setup-complete {
+    background: rgba(108, 177, 189, 0.12);
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+.setup-complete p {
+    margin: 6px 0 0;
+}
+
+
+/* =========================================
+   07. OPTION CARDS
+   Scan, Print, Email, OneDrive, Devices
+   ========================================= */
+
+.options {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-height: 220px;
+    padding: 24px 14px;
+    background: var(--white);
+    color: var(--primary);
+    border: 1px solid var(--accent);
+    border-radius: var(--radius);
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(62, 90, 99, 0.05);
+    transition: background-color 0.15s,
+                border-color 0.15s,
+                transform 0.15s;
+}
+
+.option:hover {
+    background: rgba(108, 177, 189, 0.08);
+    border-color: var(--primary);
+    transform: translateY(-3px);
+}
+
+.option-icon {
+    display: grid;
+    place-items: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    background: var(--accent);
+    color: var(--primary);
+}
+
+.option-icon svg {
+    width: 34px;
+    height: 34px;
+}
+
+.option strong {
+    font-size: 23px;
+}
+
+.option small {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.arrow {
+    color: var(--primary);
+    font-size: 20px;
+}
+
+
+/* =========================================
+   08. INSTRUCTION PAGES
+   ========================================= */
+
+.guide {
+    background: var(--white);
+    border: 1px solid var(--accent);
+    border-radius: var(--radius);
+    padding: clamp(18px, 4vw, 34px);
+}
+
+.guide h2 {
+    margin-bottom: 12px;
+}
+
+.steps {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0;
+    counter-reset: step;
+}
+
+.steps li {
+    counter-increment: step;
+    display: grid;
+    grid-template-columns: 36px minmax(0, 1fr);
+    gap: 14px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--accent);
+}
+
+.steps li::before {
+    content: counter(step);
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: var(--white);
+    font-weight: 700;
+}
+
+.steps h3 {
+    margin: 4px 0 6px;
+    font-size: 17px;
+}
+
+.steps p {
+    margin: 0;
+}
+
+
+/* =========================================
+   09. INSTRUCTION IMAGES & PLACEHOLDERS
+   ========================================= */
+
+.step-image {
+    display: block;
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 16px;
+}
+
+.image-placeholder {
+    display: grid;
+    place-items: center;
+    min-height: 110px;
+    margin-top: 14px;
+    padding: 12px;
+    text-align: center;
+    border: 1px dashed var(--accent);
+    background: rgba(108, 177, 189, 0.05);
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+
+/* =========================================
+   10. BUTTONS
+   ========================================= */
+
+.setup-button,
+.return-home {
+    background: var(--primary);
+    color: var(--white);
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 10px;
+    transition: background-color 0.15s;
+}
+
+.setup-button {
+    display: inline-block;
+    padding: 13px 20px;
+}
+
+.return-home {
+    display: block;
+    padding: 14px;
+}
+
+.setup-button:hover,
+.return-home:hover {
+    background: #304850;
+}
+
+.steps .setup-button {
+    margin-top: 14px;
+}
+
+
+/* =========================================
+   11. FOOTER
+   ========================================= */
+
+footer {
+    background: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 3px solid var(--accent);
+    font-size: 14px;
+}
+
+footer p {
+    margin: 5px 0 0;
+}
+
+.footer-logo {
+    display: block;
+    width: 35px;
+    height: auto;
+    margin: 0 auto 18px;
+}
+
+.copyright {
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+
+/* =========================================
+   12. RESPONSIVE DESIGN — TABLETS & PHONES
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .first-time-setup {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+        padding: 18px;
+    }
+
+    .setup-button {
+        display: block;
+    }
+
+}
+
+
+/* =========================================
+   13. RESPONSIVE DESIGN — SMALL PHONES
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .header {
+        padding: 12px 16px;
+    }
+
+    .company-logo {
+        width: 180px;
+    }
+
+    .home-link {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .container {
+        padding: 28px 16px 36px;
+    }
+
+    .intro {
+        margin-bottom: 30px;
+    }
+
+    .options {
+        gap: 12px;
+    }
+
+    .option {
+        min-height: 190px;
+        padding: 18px 10px;
+    }
+
+    .option strong {
+        font-size: 20px;
+    }
+
+    .option-icon {
+        width: 52px;
+        height: 52px;
+    }
+
+    .option-icon svg {
+        width: 28px;
+        height: 28px;
+    }
+
+}
+
+
+/* =========================================
+   14. ACCESSIBILITY — REDUCED MOTION
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .option,
+    .home-link,
+    .setup-button,
+    .return-home {
+        transition: none;
+    }
+
+    .option:hover {
+        transform: none;
+    }
+
+}
