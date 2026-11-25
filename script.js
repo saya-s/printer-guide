@@ -90,17 +90,23 @@ const guides = {
 
             [
                 'Generate your personal ID',
-                'Generate a new personal ID. Keep it secure; you will use it to authenticate at the office printers.'
+                'Generate a new personal ID. Keep it secure; you will use it to authenticate at the office printers.',
+                'assets/change-id.png',
+
             ],
 
             [
                 'Change your password',
-                'Use the password change option in Change Details to set your PaperCut password.'
+                'Use the password change option in Change Details to set your PaperCut password.',
+                'assets/change-pin.png',
+ 
             ],
 
             [
                 'Review your account summary',
-                'Select the Summary tab to view your balance, print jobs, printing activity and other account details.'
+                'Select the Summary tab to view your balance, print jobs, printing activity and other account details.',
+                  'assets/summary.png',
+          
             ]
 
         ]
