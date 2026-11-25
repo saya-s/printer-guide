@@ -281,7 +281,7 @@ const guides = {
 
             [
                 'Set up mobile printing',
-                'Follow the company-approved PaperCut Mobility Print setup if required.'
+                'Follow the company-approved PaperCut Mobility Print setup.'
             ],
 
             [
