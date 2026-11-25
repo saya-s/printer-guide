@@ -238,7 +238,7 @@ const guides = {
 
             [
                 'Connect to Wi-Fi',
-                'Connect to the approved company Wi-Fi network.'
+                'Connect to the company Wi-Fi network.'
             ],
 
             [
@@ -540,10 +540,14 @@ function renderPortalButton(page, index) {
 function renderStepImage(page, index, title, img) {
 
     // No images for the first two setup steps.
-    if (page === 'setup' && index < 2) {
-        return '';
-    }
-
+if (
+    (page === 'setup' && index < 2) ||
+    (title === 'Connect to Wi-Fi') 
+    
+    
+) {
+    return '';
+}
     // Display the photograph if an image path exists.
     if (img) {
 
