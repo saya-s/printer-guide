@@ -84,7 +84,8 @@ const guides = {
 
             [
                 'Open Change Details',
-                'Select Change Details from the navigation menu.'
+                'Select Change Details from the navigation menu.',
+                'assets/change-details.png'
             ],
 
             [
