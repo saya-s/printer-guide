@@ -80,7 +80,7 @@
         "Enter your personal PaperCut ID and PIN, then tap OK.": "کۆدی تایبەتت (ID) و PIN ـی PaperCut بنووسە، پاشان لەسەر OK کلیک بکە.",
 
         "Print from Android": "پرینتکردن لە Android ـەوە",
-        "Connect to the approved company Wi-Fi network.": "بە Wi-Fi ـی ڕێگەپێدراوی کۆمپانیاوە ببەستەوە.",
+        "Connect to the company Wi-Fi network.": "بە Wi-Fi ـی کۆمپانیاوە ببەستەوە.",
         "Set up mobile printing": "ڕێکخستنی پرینتەر لە مۆبایل",
         "Install the Mobility Print app from the Google Play Store and follow the setup instructions.": "بەرنامەی Mobility Print لە Google Play Store دابەزێنە و بەپێی ڕێنماییەکانی بەرنامەکە ڕێکی بخە.",
         "Open the document": "کردنەوەی فایل",

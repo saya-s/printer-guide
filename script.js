@@ -329,7 +329,7 @@ const guides = {
 
             [
                 'Connect to Wi-Fi',
-                'Connect to the approved company Wi-Fi network.'
+                'Connect to the company Wi-Fi network.'
             ],
 
             [
