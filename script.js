@@ -124,17 +124,17 @@ const guides = {
 
             [
                 'Log in',
-                'Sign in to PaperCut using your assigned authentication method.'
+                'log in to the printers touchScreen by swiping your card or using your personal ID number.'
             ],
 
             [
                 'Load your document',
-                'Place your document in the feeder or on the scanner glass.'
+                'Place your document on the scanner glass.'
             ],
 
             [
-                'Select OneDrive',
-                'Open Scan and choose the configured OneDrive destination.'
+                'Select Scan',
+                'On the touchScreen select Scan.'
             ],
 
             [
@@ -575,10 +575,12 @@ function renderStepImage(page, index, title, img) {
 if (
     (page === 'setup' && index < 2) ||
     (title === 'Connect to Wi-Fi') ||
-    (title === 'Set up mobile printing') ||
-    (title === 'Open your document') ||
-    (title === 'Print your document') ||
-    (title === 'Connect to the network')
+    (title == 'Open your document') ||
+    (title == 'Print your document') ||
+    (title == 'Connect to the network'
+)
+
+    
     
 ) {
     return '';
