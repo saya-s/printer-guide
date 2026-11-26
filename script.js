@@ -312,7 +312,7 @@ const guides = {
 
             [
                 'Set up mobile printing',
-                'Follow the company-approved PaperCut Mobility Print setup.'
+                'Install <a href="https://play.google.com/store/apps/details?id=com.papercut.projectbanksia&hl=en&pli=1" target="_blank" rel="noopener noreferrer">Mobility Print app</a> from the Google Play Store and go through the instructions.'
             ],
 
             [
@@ -576,8 +576,7 @@ if (
     (title === 'Connect to Wi-Fi') ||
     (title == 'Open your document') ||
     (title == 'Print your document') ||
-    (title == 'Connect to the network') ||
-    (title == 'Load your document'
+    (title == 'Connect to the network'
 )
 
     
