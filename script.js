@@ -291,7 +291,7 @@ const guides = {
 
             [
                 'Select your printer',
-                'Choose the available company AirPrint queue and preferences.',
+                'Choose the available company printer and review the preferences.',
                 'assets/selectprinter.png'
 
             ],
