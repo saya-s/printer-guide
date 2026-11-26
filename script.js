@@ -248,12 +248,15 @@ const guides = {
 
             [
                 'Open Print',
-                'Tap Share or the app menu and select Print.'
+                'Tap Share and scroll down to select Print.',
+                'assets/sharetoprint.png'
             ],
 
             [
                 'Select your printer',
-                'Choose the available company AirPrint queue and preferences.'
+                'Choose the available company AirPrint queue and preferences.',
+                'assets/selectprinter.png'
+
             ],
 
             [
@@ -542,7 +545,9 @@ function renderStepImage(page, index, title, img) {
     // No images for the first two setup steps.
 if (
     (page === 'setup' && index < 2) ||
-    (title === 'Connect to Wi-Fi') 
+    (title === 'Connect to Wi-Fi') ||
+    (title == 'Open your document')
+
     
     
 ) {

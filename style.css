@@ -329,6 +329,17 @@ a:focus-visible {
     border-radius: 10px;
     margin-top: 16px;
 }
+.step-image[src="assets/sharetoprint.png"] {
+    max-width:250px;
+    height: auto;
+    margin: 16px auto 0;
+}
+
+.step-image[src="assets/selectprinter.png"] {
+    max-width:250px;
+    height: auto;
+    margin: 16px auto 0;
+}
 
 .image-placeholder {
     display: grid;
