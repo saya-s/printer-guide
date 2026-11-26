@@ -202,7 +202,7 @@ const guides = {
 
             [
                 'Finish scanning',
-                'Click Finish, then check your OneDrive folder.',
+                'Click Finish, then check your Email.',
                 'assets/finishScan.png'
 
             ]

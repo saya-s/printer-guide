@@ -50,7 +50,10 @@
         "Review details": "پشکنینی زانیارییەکان",
         "After reviewing the details, click start.": "زانیارییەکان بپشکنە، پاشان لەسەر Start کلیک بکە.",
         "Finish scanning": "تەواوکردنی سکان",
+        "Click Finish, then check your Email.": "کلیک لەسەر Finish بکە، پاشان ئیمەیڵەکەت بپشکنە.",
         "Click Finish, then check your OneDrive folder.": "لەسەر Finish کلیک بکە، پاشان فۆڵدەری OneDrive ـەکەت بکەرەوە و فایلەکەت ببینە.",
+        
+
 
         "Scan to Email": "سکانکردن بۆ ئیمەیڵ",
         "On the touchScreen select Scan then select Scan to Email": "لە شاشەی پرینتەر، Scan هەڵبژێرە، پاشان Scan to Email هەڵبژێرە.",
@@ -62,7 +65,7 @@
         "close Print Deploy": "داخستنی Print Deploy",
         "after succesfullly loging in close the application": "کاتێک چوویتە ژوورەوە، بەرنامەکە دابخە.",
         "Open your document": "کردنەوەی فایل",
-        "Press Ctrl + P on Windows or go to file and click print.": "لە Windows، دوگمەکانی Ctrl + P پێکەوە دابگرە، یان لە بەشی File، Print هەڵبژێرە.",
+        "Press Ctrl + P on Windows or go to file and click print.": "لە Windows، دوگمەکانی Ctrl + P پێکەوە دابگرە، یان لە بەشی Print، File هەڵبژێرە.",
         "Select your printer": "هەڵبژاردنی پرینتەر",
 "Choose the company printer and enter printing preferences.": "پرینتەری کۆمپانیا هەڵبژێرە، پاشان ڕێکخستنەکانی پرینتکردن بەپێی پێویستی خۆت دیاری بکە.",       
  "Print your document": "ناردنی فایل بۆ پرینتەر",
