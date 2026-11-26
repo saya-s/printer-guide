@@ -281,7 +281,7 @@ const guides = {
 
             [
                 'Set up mobile printing',
-                'Follow the company-approved PaperCut Mobility Print setup.'
+                'Install <a href="https://play.google.com/store/apps/details?id=com.papercut.projectbanksia&hl=en&pli=1" target="_blank" rel="noopener noreferrer">Mobility Print app</a> from the Google Play Store and go through the instructions.'
             ],
 
             [
@@ -542,8 +542,8 @@ function renderStepImage(page, index, title, img) {
     // No images for the first two setup steps.
 if (
     (page === 'setup' && index < 2) ||
-    (title === 'Connect to Wi-Fi') 
-    
+    (title === 'Connect to Wi-Fi') ||
+    (title === 'Set up mobile printing')
     
 ) {
     return '';
