@@ -334,6 +334,11 @@ const guides = {
                 'assets/popupAndroid.png',
                 'assets/enterIDAndroid.png'
                 ]
+            ],
+            [
+                'Release your print job',
+                'On the printer’s touchscreen, swipe your card or enter your personal ID number, select your print job and tap Print to release it.',
+                'assets/touchscreen.png'
             ]
 
         ]
