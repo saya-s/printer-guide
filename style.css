@@ -483,7 +483,13 @@ footer p {
    12. RESPONSIVE DESIGN — TABLETS & PHONES
    ========================================= */
 
+/* =========================================
+   12. RESPONSIVE DESIGN — TABLETS & PHONES
+   ========================================= */
+
 @media (max-width: 600px) {
+
+    /* First-time setup on homepage — unchanged */
 
     .first-time-setup {
         flex-direction: column;
@@ -495,18 +501,56 @@ footer p {
     .setup-button {
         display: block;
     }
-        .step-row {
+
+    /* Place action buttons below instruction text */
+
+    .guide .step-row {
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 14px;
         padding: 0;
-        text-align: left;
+        text-align: start;
     }
 
-    .setup-button {
+    .guide .step-copy {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .guide .step-action-button {
         display: block;
+        width: 100%;
+        margin-top: 0;
+        white-space: normal;
+        text-align: center;
     }
 
+    /* Stack multiple photographs vertically */
+
+    .guide .step-images {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .guide .step-images .step-image {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        margin: 0;
+    }
+
+    /* Larger printer touchscreen photographs */
+
+    .guide .step-images .step-image[src="assets/printOptionsScan.png"],
+    .guide .step-images .step-image[src="assets/scanToOnedriveOption.png"],
+    .guide .step-images .step-image[src="assets/scanToEmail.png"] {
+        width: 100%;
+        max-width: 375px;
+    }
 
 }
-
 
 /* =========================================
    13. RESPONSIVE DESIGN — SMALL PHONES
