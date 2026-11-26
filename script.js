@@ -334,7 +334,7 @@ const guides = {
 
             [
                 'Set up mobile printing',
-                'Install <a href="https://play.google.com/store/apps/details?id=com.papercut.projectbanksia&hl=en&pli=1" target="_blank" rel="noopener noreferrer">Mobility Print app</a> from the Google Play Store and go through the instructions.'
+                'Install the Mobility Print app from the Google Play Store and follow the setup instructions.'
             ],
 
             [
@@ -574,26 +574,40 @@ function renderMenu(page) {
 
 
 /* =========================================
-   11. RENDER PAPERCUT PORTAL BUTTON
+   11. RENDER STEP ACTION BUTTON
    ========================================= */
 
-function renderPortalButton(page, index) {
+function renderStepButton(page, index) {
 
-    // Only display the button on setup Step 1.
-    if (page !== 'setup' || index !== 0) {
-        return '';
+    // Setup Step 1: PaperCut Portal
+    if (page === 'setup' && index === 0) {
+        return `
+            <a
+                class="setup-button step-action-button"
+                href="${portalUrl}"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Open PaperCut Portal ↗
+            </a>
+        `;
     }
 
-    return `
-        <a
-            class="setup-button"
-            href="${portalUrl}"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            Open PaperCut Portal ↗
-        </a>
-    `;
+    // Android Step 2: Mobility Print App
+    if (page === 'android' && index === 1) {
+        return `
+            <a
+                class="setup-button step-action-button"
+                href="https://play.google.com/store/apps/details?id=com.papercut.projectbanksia&hl=en&pli=1"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Get Mobility Print ↗
+            </a>
+        `;
+    }
+
+    return '';
 }
 
 
@@ -660,17 +674,21 @@ function renderStepImage(page, index, title, img) {
 function renderStep(page, step, index) {
 
     const [title, description, img] = step;
+    const buttonHtml = renderStepButton(page, index);
 
     return `
         <li>
 
             <div>
 
-                <h3>${title}</h3>
+                <div class="${buttonHtml ? 'step-row' : ''}">
+                    <div class="step-copy">
+                        <h3>${title}</h3>
+                        <p>${description}</p>
+                    </div>
 
-                <p>${description}</p>
-
-                ${renderPortalButton(page, index)}
+                    ${buttonHtml}
+                </div>
 
                 ${renderStepImage(page, index, title, img)}
 
@@ -679,7 +697,6 @@ function renderStep(page, step, index) {
         </li>
     `;
 }
-
 
 /* =========================================
    14. RENDER SETUP COMPLETION MESSAGE
