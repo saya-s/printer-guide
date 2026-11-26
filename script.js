@@ -200,27 +200,42 @@ const guides = {
 
             [
                 'Connect to the network',
-                'Connect to the approved company network.'
+                'Connect to the company network.'
             ],
 
             [
-                'Set up the printer',
-                'Use the printer installation process provided by IT, if needed.'
+                'Login to Print Deploy',
+                'on your screen locate Print Deploy, click to open and login with microsoft ',
+                'assets/locateprintdeploy.png'
+            ],
+           
+            [
+                'close Print Deploy',
+                'after succesfullly loging in close the application',
+                'assets/printdeploylogin.png'
             ],
 
             [
                 'Open your document',
-                'Press Ctrl + P on Windows or Command + P on macOS.'
+                'Press Ctrl + P on Windows or go to file and click print.'
             ],
 
             [
                 'Select your printer',
-                'Choose the company printer queue and printing preferences.'
+                'Choose the company printer and enter printing preferences.',
+                'assets/printscreen.png'
+            ],
+
+           
+            [
+                'Print your document',
+                'Tap Print to submit your print job.',
             ],
 
             [
-                'Print and release',
-                'Submit your job and release it at the printer if required.'
+                'Release your print job',
+                'On the printer’s touchscreen, swipe your card or enter your personal ID number, select your print job and tap Print to release it.',
+                'assets/touchScreen.png'
             ]
 
         ]
@@ -260,8 +275,21 @@ const guides = {
             ],
 
             [
-                'Print and release',
-                'Tap Print and authenticate or release your job if required.'
+                'Enter your credentials',
+                'Enter your personal PaperCut ID and PIN, then tap OK.',
+                'assets/authentication.png'
+
+            ],
+
+            [
+                'Print your document',
+                'Tap Print to submit your print job.'
+            ],
+
+            [
+                'Release your print job',
+                'On the printer’s touchscreen, swipe your card or enter your personal ID number, select your print job and tap Print to release it.',
+                'assets/touchscreen.png'
             ]
 
         ]
@@ -546,7 +574,10 @@ function renderStepImage(page, index, title, img) {
 if (
     (page === 'setup' && index < 2) ||
     (title === 'Connect to Wi-Fi') ||
-    (title == 'Open your document')
+    (title == 'Open your document') ||
+    (title == 'Print your document') ||
+    (title == 'Connect to the network'
+)
 
     
     

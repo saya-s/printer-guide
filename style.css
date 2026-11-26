@@ -340,6 +340,13 @@ a:focus-visible {
     height: auto;
     margin: 16px auto 0;
 }
+.step-image[src="assets/authentication.png"] {
+    max-width:250px;
+    height: auto;
+    margin: 16px auto 0;
+}
+
+
 
 .image-placeholder {
     display: grid;
