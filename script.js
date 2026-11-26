@@ -317,7 +317,8 @@ const guides = {
 
             [
                 'Open your document',
-                'Open a document or photo and select Print from the app menu.'
+                'Open a document or photo, tap Share, and select Print',
+                'assets/openImageAndroid.png'
             ],
 
             [
@@ -570,7 +571,7 @@ function renderPortalButton(page, index) {
 
 function renderStepImage(page, index, title, img) {
 
-    // No images for the first two setup steps.
+    // No images for some setup steps.
 if (
     (page === 'setup' && index < 2) ||
     (title === 'Connect to Wi-Fi') ||
