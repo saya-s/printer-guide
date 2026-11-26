@@ -332,10 +332,8 @@ const guides = {
                 'Click the popup that you recieved, sign in with your personal printer ID number and your passcode to print',
                 [
                 'assets/popupAndroid.png',
-                'assets/change-id.png'
-            ]
-
-
+                'assets/enterIDAndroid.png'
+                ]
             ]
 
         ]
@@ -579,10 +577,14 @@ function renderPortalButton(page, index) {
 function renderStepImage(page, index, title, img) {
 
     // Instructions that do not require images.
-    if (
-        (page === 'setup' && index < 2) ||
-        (title === 'Connect to Wi-Fi')
-    ) {
+    if 
+        (page === 'setup' && index < 2)||
+        (title === 'Connect to Wi-Fi') ||
+        (title == 'Open your document') ||
+        (title == 'Print your document') ||
+        (title == 'Connect to the network') ||
+        (title == 'Load your document')
+    {    
         return '';
     }
 
