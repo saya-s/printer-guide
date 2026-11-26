@@ -577,17 +577,17 @@ function renderPortalButton(page, index) {
 function renderStepImage(page, index, title, img) {
 
     // Instructions that do not require images.
-    if 
-        (page === 'setup' && index < 2)||
-        (title === 'Connect to Wi-Fi') ||
-        (title == 'Open your document') ||
-        (title == 'Print your document') ||
-        (title == 'Connect to the network') ||
-        (title == 'Load your document')
-    {    
-        return '';
-    }
-
+    if (
+    (page === 'setup' && index < 2) ||
+    (title === 'Connect to Wi-Fi') ||
+    (title === 'Set up mobile printing') ||
+    (title === 'Open your document') ||
+    (title === 'Print your document') ||
+    (title === 'Connect to the network')
+    
+) {
+    return '';
+}
     // Display multiple images side by side.
     if (Array.isArray(img)) {
         return `
