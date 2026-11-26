@@ -330,8 +330,10 @@ const guides = {
             [
                 'Authenticate and print',
                 'Click the popup that you recieved, sign in with your personal printer ID number and your passcode to print',
+                [
                 'assets/popupAndroid.png',
-                'assets/selectPrinterAndroid.png'
+                'assets/change-id.png'
+            ]
 
 
             ]
@@ -576,23 +578,32 @@ function renderPortalButton(page, index) {
 
 function renderStepImage(page, index, title, img) {
 
-    // No images for some setup steps.
-if (
-    (page === 'setup' && index < 2) ||
-    (title === 'Connect to Wi-Fi') ||
-    (title == 'Open your document') ||
-    (title == 'Print your document') ||
-    (title == 'Connect to the network')||
-    (title === 'Set up mobile printing')
+    // Instructions that do not require images.
+    if (
+        (page === 'setup' && index < 2) ||
+        (title === 'Connect to Wi-Fi')
+    ) {
+        return '';
+    }
 
-    
-    
-) {
-    return '';
-}
-    // Display the photograph if an image path exists.
+    // Display multiple images side by side.
+    if (Array.isArray(img)) {
+        return `
+            <div class="step-images">
+                ${img.map((src, i) => `
+                    <img
+                        class="step-image"
+                        src="${src}"
+                        alt="${title} - Image ${i + 1}"
+                        loading="lazy"
+                    >
+                `).join('')}
+            </div>
+        `;
+    }
+
+    // Display a single image.
     if (img) {
-
         return `
             <img
                 class="step-image"
@@ -601,10 +612,9 @@ if (
                 loading="lazy"
             >
         `;
-
     }
 
-    // Otherwise, display a temporary placeholder.
+    // Display a placeholder.
     return `
         <div class="image-placeholder">
             Step ${index + 1} — Add photograph here

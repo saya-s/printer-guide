@@ -360,7 +360,20 @@ a:focus-visible {
     height: auto;
     margin: 16px auto 0;
 }
+.step-images {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: 16px;
+    margin-top: 16px;
+}
 
+.step-images .step-image {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin: 0 auto;
+}
 
 
 
