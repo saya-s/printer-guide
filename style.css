@@ -360,6 +360,7 @@ a:focus-visible {
     height: auto;
     margin: 16px auto 0;
 }
+
 .step-images {
     display: flex;
     justify-content: center;
@@ -369,10 +370,17 @@ a:focus-visible {
 }
 
 .step-images .step-image {
-    width: calc((100%-8px)/2);
+    width: calc((100% - 8px) / 2);
     max-width: 250px;
     height: auto;
     margin: 0;
+}
+
+.step-images .step-image[src="assets/printOptionsScan.png"],
+.step-images .step-image[src="assets/scanToOnedriveOption.png"],
+.step-images .step-image[src="assets/scanToEmail.png"] {
+    width: 100%;
+    max-width: 375px;
 }
 
 

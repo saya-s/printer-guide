@@ -124,7 +124,8 @@ const guides = {
 
             [
                 'Log in',
-                'log in to the printers touchScreen by swiping your card or using your personal ID number.'
+                'log in to the printers touchScreen by swiping your card or using your personal ID number.',
+                'assets/touchscreen.png'
             ],
 
             [
@@ -134,17 +135,27 @@ const guides = {
 
             [
                 'Select Scan',
-                'On the touchScreen select Scan.'
+                'On the touchScreen select Scan then select Scan to Onedrive',
+                [
+                    'assets/printOptionsScan.png',
+                    'assets/scanToOnedriveOption.png'
+
+                ]
+
             ],
 
             [
-                'Check the settings',
-                'Choose the file format, color and page settings.'
+                'Review details',
+                'After reviewing the details, click start.',
+                'assets/startScanOnedrive.png'
+
             ],
 
             [
-                'Start scanning',
-                'Start the scan. Complete Microsoft authorization if prompted, then check your configured OneDrive folder.'
+                'Finish scanning',
+                'Click Finish, then check your OneDrive folder.',
+                'assets/finishScan.png'
+
             ]
 
         ]
@@ -162,27 +173,38 @@ const guides = {
 
             [
                 'Log in',
-                'Sign in to PaperCut at the printer.'
+                'log in to the printers touchScreen by swiping your card or using your personal ID number.',
+                'assets/touchscreen.png'
             ],
 
             [
                 'Load your document',
-                'Use the document feeder or scanner glass.'
+                'Place your document on the scanner glass.'
             ],
 
             [
-                'Select Email',
-                'Open Scan and choose the configured email destination.'
+                'Select Scan',
+                'On the touchScreen select Scan then select Scan to Email',
+                [
+                    'assets/printOptionsScan.png',
+                    'assets/scanToEmail.png'
+
+                ]
+
             ],
 
             [
-                'Review settings',
-                'Check the destination and scan preferences.'
+                'Review details',
+                'After reviewing the details, click start.',
+                'assets/startScanEmail.png'
+
             ],
 
             [
-                'Start scanning',
-                'Start the scan and check your Outlook inbox.'
+                'Finish scanning',
+                'Click Finish, then check your OneDrive folder.',
+                'assets/finishScan.png'
+
             ]
 
         ]
@@ -588,7 +610,8 @@ function renderStepImage(page, index, title, img) {
     (title === 'Set up mobile printing') ||
     (title === 'Open your document') ||
     (title === 'Print your document') ||
-    (title === 'Connect to the network')
+    (title === 'Connect to the network')||
+    (title === 'Load your document')
     
 ) {
     return '';
