@@ -1,0 +1,32 @@
+/* Language add-on — load after style.css. */
+.language-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+.language-toggle {
+    font: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--white);
+    background: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    padding: 8px 14px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.language-toggle:hover { background: #304850; }
+.language-toggle:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+html[dir="rtl"] .header { direction: ltr; }
+html[dir="rtl"] .home-link { direction: rtl; }
+html[dir="rtl"] h1, html[dir="rtl"] .eyebrow { letter-spacing: normal; }
+html[dir="rtl"] .step-row { text-align: start; }
+html[dir="rtl"] .step-images { direction: ltr; }
+html[dir="rtl"] .step-action-button { white-space: normal; }
+@media (max-width: 480px) {
+    .header { gap: 10px; }
+    .language-header-actions { gap: 5px; }
+    .language-toggle { font-size: 12px; padding: 8px 10px; }
+}
