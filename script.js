@@ -316,19 +316,24 @@ const guides = {
             ],
 
             [
-                'Open your document',
+                'Open the document',
                 'Open a document or photo, tap Share, and select Print',
                 'assets/openImageAndroid.png'
             ],
 
             [
                 'Select your printer',
-                'Choose the company printer and printing preferences.'
+                'Choose the company printer and printing preferences.',
+                'assets/selectPrinterAndroid.png'
             ],
 
             [
-                'Print and release',
-                'Submit your print job and release it at the printer if required.'
+                'Authenticate and print',
+                'Click the popup that you recieved, sign in with your personal printer ID number and your passcode to print',
+                'assets/popupAndroid.png',
+                'assets/selectPrinterAndroid.png'
+
+
             ]
 
         ]
@@ -577,8 +582,8 @@ if (
     (title === 'Connect to Wi-Fi') ||
     (title == 'Open your document') ||
     (title == 'Print your document') ||
-    (title == 'Connect to the network'
-)
+    (title == 'Connect to the network')||
+    (title === 'Set up mobile printing')
 
     
     
