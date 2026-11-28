@@ -114,7 +114,48 @@
         "→": "←",
         "Guide navigation": "گەڕان لە ڕێنماییەکان",
         "Hiwa Rauf Investment & Development": "هیوا ڕەئوف بۆ وەبەرهێنان و گەشەپێدان",
-        "Hiwa Rauf": "هیوا ڕەئوف"
+        "Hiwa Rauf": "هیوا ڕەئوف",
+        /* PRINT VIA EMAIL */
+
+"How would you like to print?":
+    "دەتەوێت بە چ ڕێگایەک پرینت بکەیت؟",
+
+"Choose your preferred printing method.":
+    "ڕێگایەک بۆ پرینتکردن هەڵبژێرە.",
+
+"Print via Email":
+    "پرینتکردن لە ڕێگەی ئیمەیڵەوە",
+
+"Send a PDF document via email":
+    "ناردنی فایلی PDF بە ئیمەیڵ",
+
+"Compose a new email":
+    "نووسینی ئیمەیڵێکی نوێ",
+
+"Open your email application and compose a new email.":
+    "بەرنامەی ئیمەیڵەکەت بکەرەوە و ئیمەیڵێکی نوێ بنووسە.",
+
+"Enter the recipient":
+    "دیاریکردنی وەرگری ئیمەیڵ",
+
+"Enter":
+    "ئەم ناونیشانە بنووسە",
+
+"in the recipient field.":
+    "لە بەشی To.",
+
+"Attach your document":
+    "هاوپێچکردنی فایل",
+
+"Attach the PDF document you would like to print. Only PDF files are supported.":
+    "ئەو فایلەی دەتەوێت پرینتی بکەیت، هاوپێچی ئیمەیڵەکە بکە. تێبینی: فایلەکە دەبێت بە فۆرماتی PDF بێت.",
+
+"Send the email":
+    "ناردنی ئیمەیڵ",
+
+"Send the email to submit your print job.":
+    "ئیمەیڵەکە بنێرە، پاشان دەتوانیت فایلەکەت لە پرینتەری کۆمپانیا پرینت بکەیت.",
+        
     };
 
     const normalize = text => text.trim().replace(/\s+/g, ' ');
