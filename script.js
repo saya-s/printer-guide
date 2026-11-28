@@ -126,7 +126,7 @@ const guides = {
             [
                 'Log in',
                 'log in to the printers touchScreen by swiping your card or using your personal ID number.',
-                'assets/touchscreen.png'
+                'assets/touchScreen.png'
             ],
 
             [
@@ -175,7 +175,7 @@ const guides = {
             [
                 'Log in',
                 'log in to the printers touchScreen by swiping your card or using your personal ID number.',
-                'assets/touchscreen.png'
+                'assets/touchScreen.png'
             ],
 
             [
@@ -361,7 +361,7 @@ const guides = {
             [
                 'Release your print job',
                 'On the printer’s touchscreen, swipe your card or enter your personal ID number, select your print job and tap Print to release it.',
-                'assets/touchscreen.png'
+                'assets/touchScreen.png'
             ]
 
         ]
@@ -402,7 +402,7 @@ printemail: {
         [
             'Release your print job',
             'On the printer’s touchscreen, swipe your card or enter your personal ID number, select your print job and tap Print to release it.',
-            'assets/touchscreen.png'
+            'assets/touchScreen.png'
         ]
 
     ]
