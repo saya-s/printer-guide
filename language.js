@@ -71,7 +71,7 @@
  "Print your document": "ناردنی فایل بۆ پرینتەر",
         "Tap Print to submit your print job.": "لەسەر Print کلیک بکە تا فایلەکەت بۆ پرینتەر بنێردرێت.",
         "Release your print job": "پرینتکردنی فایلەکەت",
-"On the printer’s touchscreen, swipe your card or enter your personal ID number, select your print job and tap Print to release it.": "بۆ چوونە ژوورەوە، کارتەکەت لە کارتخوێنەرەکە بدە یان کۆدی تایبەتی خۆت (ID) لە شاشەی پرینتەر بنووسە. پاشان ئەو فایلەی دەتەوێت پرینتی بکەیت هەڵبژێرە و لەسەر Print کلیک بکە.",
+"On the printer’s touchScreen, swipe your card or enter your personal ID number, select your print job and tap Print to release it.": "بۆ چوونە ژوورەوە، کارتەکەت لە کارتخوێنەرەکە بدە یان کۆدی تایبەتی خۆت (ID) لە شاشەی پرینتەر بنووسە. پاشان ئەو فایلەی دەتەوێت پرینتی بکەیت هەڵبژێرە و لەسەر Print کلیک بکە.",
         "Print from iOS": "پرینتکردن لە iOS ـەوە",
         "Connect to Wi-Fi": "بەستنەوە بە Wi-Fi",
         "Connect to the company Wi-Fi network.": "بە Wi-Fi ـی کۆمپانیاوە ببەستەوە.",
