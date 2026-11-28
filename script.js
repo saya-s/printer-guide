@@ -33,14 +33,15 @@ const menus = {
         ]
     },
 
-    print: {
-        title: 'What device are you printing from?',
-        subtitle: 'Choose your device.',
-        options: [
-            ['phone', 'Phone', 'Mobile printing', 'phone'],
-            ['laptop', 'Laptop', 'Computer printing', 'laptop']
-        ]
-    },
+print: {
+    title: 'How would you like to print?',
+    subtitle: 'Choose your preferred printing method.',
+    options: [
+        ['phone', 'Phone', 'Mobile printing', 'phone'],
+        ['laptop', 'Laptop', 'Computer printing', 'laptop'],
+        ['printemail', 'Print via Email', 'Send a PDF document via email', 'mail']
+    ]
+},
 
     phone: {
         title: 'What type of phone do you use?',
@@ -364,7 +365,45 @@ const guides = {
             ]
 
         ]
-    }
+    },
+
+    /* -------------------------------------
+   PRINT VIA EMAIL
+   ------------------------------------- */
+
+printemail: {
+    title: 'Print via Email',
+
+    steps: [
+
+        [
+            'Compose a new email',
+            'Open your email application and compose a new email.'
+        ],
+
+        [
+            'Enter the recipient',
+            'Enter <a href="mailto:scan@hiwarauf.com">scan@hiwarauf.com</a> in the recipient field.'
+        ],
+
+        [
+            'Attach your document',
+            'Attach the PDF document you would like to print. Only PDF files are supported.'
+        ],
+
+        [
+            'Send the email',
+            'Send the email to submit your print job.'
+        ],
+
+        [
+            'Release your print job',
+            'On the printer’s touchscreen, swipe your card or enter your personal ID number, select your print job and tap Print to release it.',
+            'assets/touchscreen.png'
+        ]
+
+    ]
+}
 
 };
 
@@ -379,6 +418,7 @@ const parents = {
     setup: 'home',
     scan: 'home',
     print: 'home',
+    printemail: 'print',
     phone: 'print',
     laptop: 'print',
     ios: 'phone',
@@ -401,7 +441,8 @@ const labels = {
     ios: 'iOS',
     android: 'Android',
     onedrive: 'OneDrive',
-    email: 'Email'
+    email: 'Email',
+    printemail: 'Print via Email'
 };
 
 
@@ -625,6 +666,7 @@ function renderStepImage(page, index, title, img) {
     (title === 'Open your document') ||
     (title === 'Print your document') ||
     (title === 'Connect to the network')||
+    (page === 'printemail' && index < 4) ||
     (title === 'Load your document')
     
 ) {
