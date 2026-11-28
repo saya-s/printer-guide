@@ -60,10 +60,15 @@ a:focus-visible {
    ========================================= */
 
 .header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+
     background: var(--white);
     border-bottom: 3px solid var(--accent);
     padding: 12px max(24px, calc((100% - 900px) / 2));
