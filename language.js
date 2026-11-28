@@ -59,7 +59,7 @@
         "On the touchScreen select Scan then select Scan to Email": "لە شاشەی پرینتەر، Scan هەڵبژێرە، پاشان Scan to Email هەڵبژێرە.",
 
         "Print from Laptop": "پرینتکردن لە لاپتۆپەوە",
-"Connect to the network.": "پەیوەندی بە Wi-Fi ـی کۆمپانیاوە بکە.",        
+"Connect to the network": "پەیوەندی بە Wi-Fi ـی کۆمپانیاوە بکە.",        
 "Connect to the company network.": "پەیوەندی بە Wi-Fi ـی کۆمپانیاوە بکە.",        "Login to Print Deploy": "چوونە ژوورەوە لە Print Deploy",
         "on your screen locate Print Deploy, click to open and login with microsoft": "لە لاپتۆپەکەت بەرنامەی Print Deploy بدۆزەرەوە و بیکەرەوە، پاشان بە ئەکاونتی Microsoft بچۆ ژوورەوە.",
         "close Print Deploy": "داخستنی Print Deploy",
