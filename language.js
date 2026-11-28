@@ -95,7 +95,7 @@
         "Home": "سەرەکی",
         "EMPLOYEE SELF-SERVICE": "ڕێنمایی بۆ کارمەندان",
         "Printer Help Center": "ڕێنمایی بەکارهێنانی پرینتەر",
-        "Everything you need to print and scan in the office.": "هەموو ڕێنماییەکانی پرینتکردن و سکانکردن لە کۆمپانیا.",
+        "Everything you need to print and scan in the office.": "ڕێنماییەکانی پرینتکردن و سکانکردن.",
         "← Back": "گەڕانەوە →",
         "First time using our printers?": "یەکەم جارە پرینتەرەکانی کۆمپانیا بەکاردەهێنیت؟",
         "Set up your personal PaperCut ID and password before printing or scanning.": "پێش پرینتکردن یان سکانکردن، کۆدی تایبەت (ID) و پاسوۆردێک بۆ PaperCut دابنێ.",
